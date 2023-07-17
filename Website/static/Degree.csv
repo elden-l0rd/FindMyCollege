@@ -1,0 +1,122 @@
+﻿School,Degree,A_Level_IGP,Poly_IGP,Percentage_Of_Employed_Graduates,Mean_Gross_Monthly_Salary,riasec_code,related_subject1,related_subject2,related_subject3,additional_information,a_level_prerequisite_subjects,a_level_prerequisites
+NTU,Medicine,AAAA,,100,5404,i,chemistry,biology,physics,selection test/interview needed,"chemistry,biology,physics",h2 chemistry and h2 biology or h2 physics
+NTU,Renaissance Engineering,AAAA,,,,r,mathematics,art,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Aerospace Engineering,AACB,3.55,94.4,4321,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing",h2 mathematics and h2 chemistry or h2 biology or h2 computing
+NTU,Bioengineering,BBCC,3.57,90.9,3654,r,mathematics,chemistry,biology,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Chemical & Biomolecular Engineering,BBCC,3.71,91.1,3959,r,chemistry,mathematics,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Civil Engineering,CCDD,3.49,97.7,3664,ric,mathematics,art,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Computer Engineering,AACC,3.65,95.8,4847,r,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing",h2 mathematics and h2 chemistry or h2 biology or h2 computing
+NTU,Computer Science,AAAC,3.7,95.8,4942,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing",h2 mathematics and h2 chemistry or h2 biology or h2 computing
+NTU,Data Science & Artificial Intelligence,AAAB,3.9,88.2,6749,ic,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing",h2 mathematics and h2 chemistry or h2 biology or h2 computing
+NTU,Electrical & Electronic Engineering,CCDC,3.44,93.9,4069,r,mathematics,computing,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Engineering,CCCC,,,,r,mathematics,computing,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Environmental Engineering,BCCD,3.56,96.6,3487,ri,mathematics,chemistry,biology,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 physics or h2 chemistry or h2 biology
+NTU,Information Engineering & Media,BCCD,3.66,95.7,4325,rs,mathematics,computing,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 chemistry or h2 biology or h2 computing and h1 physics
+NTU,Maritime Studies,BCCD,3.5,98.4,3763,ri,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology",h1 mathematics and h1 chemistry or h1 biology and h1 physics
+NTU,Materials Engineering,BCCC,3.41,96.3,3801,ri,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 chemistry or h2 biology
+NTU,Mechanical Engineering,CCDD,3.37,94,4006,ri,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology",h2 mathematics and h2 chemistry or h2 biology
+NTU,Biological Sciences,AABC,3.71,96.8,3569,ri,mathematics,chemistry,biology,selection test/interview needed,"mathematics,physics,chemistry,biology",h2 chemistry or h2 biology or h2 physics and h1 mathematics
+NTU,Chemistry & Biological Chemistry,BBCC,3.57,90.2,3501,ri,chemistry,biology,mathematics,,"chemistry,mathematics,physics",h2 chemistry and h2 mathematics or h2 physics
+NTU,Environmental Earth Systems Science,AAAC,,100,3888,ri,mathematics,chemistry,biology,,"mathematics,physics,chemistry,biology,computing,economics",h2 chemistry or h2 biology or h2 physics or h2 computing or h2 economics and h1 mathematics
+NTU,Mathematical Sciences,BCCB,3.36,91,4039,ic,mathematics,physics,computing,,mathematics,h2 mathematics
+NTU,Physics,CCDC,,84.5,3793,r,mathematics,physics,computing,,"mathematics,physics",h2 mathematics and h2 physics
+NTU,Accountancy,BCCB,3.65,97.7,3539,c,mathematics,economics,accounting,selection test/interview needed,mathematics,h2 mathematics
+NTU,Business,BBCB,3.64,96.2,4362,isec,mathematics,economics,business,selection test/interview needed,mathematics,h2 mathematics
+NTU,"Art, Design & Media",BCCC,3.38,86.2,3182,as,art,computing,history,"Candidates are required to submit 3 items:(i) A video tape, DVD disk or CDROM containing a 10 minute (no longer) personal explanation performance demonstrating why you should be admitted into the BFA. (ii) A short written explanation in English of no more than 400 words as to why you should be allowed to enter the BFA. (iii) A set of 5 photographs taken by you of any subject. No accompanying explanation necessary. In addition, ‘O’ level or equivalent pass in Mathematics",null,null
+NTU,Chinese,BCCB,3.42,87,3483,as,chinese,history,literature,,chinese,h2 chinese
+NTU,Communication Studies,AABB,3.71,96.9,3548,as,computing,general paper,literature,selection test/interview needed,"mathematics,general paper",h1 mathematics and h1 general paper
+NTU,Economics,BBCC,3.57,93.5,3720,ic,economics,mathematics,general paper,,"mathematics,general paper",h1 mathematics and h1 general paper
+NTU,Economics and Data Science,AABB,3.76,92.9,3822,ic,economics,mathematics,computing,,"mathematics,physics,chemistry,biology,computing",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing
+NTU,English,BBCB,3.34,95.5,3354,as,general paper,literature,project work,,general paper,h1 general paper
+NTU,History,BCCC,3.35,82.2,3800,i,history,general paper,literature,,general paper,h1 general paper
+NTU,Linguistics & Multilingual Studies,ABCC,3.5,87.2,3398,as,general paper,literature,history,,general paper,h1 general paper
+NTU,Philosophy,BBCC,3.5,88.5,3502,is,general paper,literature,mathematics,,general paper,h1 general paper
+NTU,Psychology,AACB,3.73,91.8,3362,ias,biology,mathematics,general paper,,"mathematics,general paper",h1 mathematics and h1 general paper
+NTU,Public Policy & Global Affairs,AACB,3.6,83.3,4105,ias,history,general paper,economics,,general paper,h1 general paper
+NTU,Sociology,BBCC,3.61,91.3,3567,s,general paper,project work,history,,general paper,h1 general paper
+NTU,Arts (Education),BCCC,,100,3718,as,art,literature,history,selection test/interview needed,mathematics,h2 mathematics
+NTU,Science (Education),AACB,,100,3796,is,mathematics,chemistry,biology,selection test/interview needed,mathematics,h2 mathematics
+NTU,Sport Science. & Management,BCCD,3.54,86.2,3438,as,physical education,biology,physical education,,mathematics,h1 mathematics
+SMU,Accountancy,BBCC,3.63,98.7,3814,c,mathematics,economics,accounting,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Business Management,BBBB,3.73,96.6,4371,isec,mathematics,economics,business,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Law,AAAA,,100,5433,is,history,economics,general paper,selection test/interview needed,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Economics,BBCB,3.61,91.8,4777,ic,economics,mathematics,general paper,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Information Systems,BBBC,3.71,98.2,4906,rs,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Computer Science,AABA,3.8,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Computing & Law,ABBA,,,,isc,mathematics,computing,general paper,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Software Engineering,BBBC,3.71,,,rsc,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SMU,Social Sciences,BBBC,3.67,94.1,3836,s,history,general paper,project work,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+NUS,Law,AAAA,3.82,96.5,5627,is,history,economics,general paper,selection test/interview needed,general paper,h1 general paper
+NUS,Medicine,AAAA,3.86,,,i,chemistry,biology,physics,selection test/interview needed,"chemistry,biology,physics",h2 chemistry and h2 biology or h2 physics
+NUS,Nursing,CCDB,3.42,96.2,3530,s,chemistry,biology,general paper,selection test/interview needed,"mathematics,physics,chemistry,biology,computing",h2 mathematics and h2 chemistry or h2 biology or h2 computing
+NUS,Dentistry,AAAA,,100,4286,rs,chemistry,biology,physics,selection test/interview needed,"chemistry,biology,physics",h2 chemistry and h2 biology or h2 physics
+NUS,Architecture,BBCC,3.56,97.7,4139,ra,mathematics,art,physics,selection test/interview needed,"chemistry,mathematics,physics",h2 chemistry and h2 mathematics or h2 physics
+NUS,Engineering,BCCB,3.56,,,r,mathematics,computing,physics,,mathematics,h2 mathematics
+NUS,Industrial Design,BBCC,3.62,87.5,4178,ra,mathematics,art,physics,selection test/interview needed,"art,economics,mathematics,physics",h2 art or h2 economics or h2 mathematics or h2 physics
+NUS,Landscape Architecture,BCCB,3.38,,,ra,mathematics,art,physics,selection test/interview needed,"chemistry,mathematics,physics",h2 chemistry and h2 mathematics or h2 physics
+NUS,Business Analytics,AAAA,3.81,100,5603,ec,mathematics,economics,computing,,mathematics,h2 mathematics
+NUS,Computer Science,AAAA,3.84,99.1,6002,ric,mathematics,computing,physics,,mathematics,h2 mathematics
+NUS,Information Security,AAAB,3.8,100,5095,rs,mathematics,computing,physics,,mathematics,h2 mathematics
+NUS,Information Systems,AAAB,3.76,97.5,5217,rs,mathematics,computing,physics,,mathematics,h2 mathematics
+NUS,Computer Engineering,AABB,3.88,97.4,5473,r,mathematics,computing,physics,,"mathematics,chemistry,physics",h2 mathematics and h2 chemistry or h2 physics
+NUS,Data Science & Economics,AAAB,,,,ic,mathematics,computing,economics,,mathematics,h2 mathematics
+NUS,Environmental Studies,AABC,,97.4,3658,ri,mathematics,chemistry,biology,,biology,h2 biology
+NUS,Food Science & Technology,AAAA,3.86,,,ri,chemistry,biology,mathematics,,"mathematics,physics,chemistry,biology,computing",h2 mathematics or h2 chemistry or h2 biology or h2 computing
+NUS,Humanities & Sciences,ABBC,3.67,,,ias,general paper,history,literature,,general paper,h1 general paper
+NUS,Pharmaceutical Sciences,AAAA,,,,ri,mathematics,chemistry,biology,,"chemistry,biology,physics,mathematics",h2 chemistry and h2 biology or h2 physics or h2 mathematics
+NUS,Pharmacy,AAAA,3.86,95.9,3923,ri,mathematics,chemistry,biology,,"chemistry,biology,physics,mathematics",h2 chemistry and h2 biology or h2 physics or h2 mathematics
+NUS,"Philosophy, Politics & Economics",AAAA,,,,ic,mathematics,literature,economics,selection test/interview needed,null,null
+NUS,Business Administration,AABC,3.68,94.7,5567,ec,mathematics,economics,general paper,,mathematics,h2 mathematics
+NUS,Business Administration (Accountancy),AABB,3.78,100,3515,ec,mathematics,economics,accounting,,mathematics,h2 mathematics
+NUS,Real Estate,BBCB,3.52,94.5,3863,ec,mathematics,economics,general paper,,"mathematics,chemistry,physics",h2 mathematics and h2 chemistry or h2 physics
+SIT,Information Security,,,100,5251,rs,mathematics,computing,physics,,mathematics,h2 mathematics
+SIT,Software Engineering,,,100,5215,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Computer Science,,,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Computer Science in Interactive Media and Game Development,,,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Computer Science in Real-Time Interactive Simulation,,,95.1,4984,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Applied Artificial Intelligence,,,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry",h2 mathematics or h2 physics or h2 chemistry
+SIT,Digital Supply Chain,,,,,ric,mathematics,computing,business,,"mathematics,physics,chemistry",h2 mathematics or h2 physics or h2 chemistry
+SIT,Applied Computing (with specialisation in Fintech),,,,,ric,mathematics,computing,economics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Dietetics & Nutrition,,,,,ri,physical education,biology,chemistry,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Diagnostic Radiography,,,100,3880,ri,biology,chemistry,mathematics,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Physiotherapy,,,97.9,3591,s,biology,chemistry,physical education,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Occupational Therapy,,,100,3546,s,biology,chemistry,general paper,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Speech & Language Therapy,,,,,s,biology,chemistry,general paper,,"mathematics,physics,chemistry,biology,economics",h2 mathematics or h2 physics or h2 chemistry or h2 biology and h1 economics
+SIT,Radiation Therapy,,,100,3328,i,biology,chemistry,general paper,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Nursing,,,98.3,3697,s,chemistry,biology,physics,,"mathematics,physics,chemistry,biology,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology and h1 general paper
+SIT,Food Business Management,,,91.9,2817,rec,economics,biology,chemistry,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Accountancy,,,97.7,3431,c,mathematics,economics,computing,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Hospitality Business,,,96.1,3216,sec,economics,biology,computing,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Air Transport Management,,,,,ec,economics,computing,project work,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Pharmaceutical Engineering,,,98.3,3736,ri,biology,mathematics,chemistry,,"mathematics,physics,chemistry,biology,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology and h1 general paper
+SIT,Food Technology,,,96.4,3322,ri,physical education,biology,chemistry,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 physics or h2 chemistry or h2 biology
+SIT,Chemical Engineering,,,79.2,3836,ric,chemistry,computing,mathematics,,"mathematics,physics,chemistry,biology",h2 mathematics or h2 chemistry or h2 biology
+SIT,Sustainable Infrastructure Engineering,,,98,3773,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Civil Engineering,,,92.8,3719,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Aerospace Engineering,,,100,3940,ric,mathematics,chemistry,physics,,"mathematics,physics",h2 mathematics and h2 physics
+SIT,Aircraft System Engineering,,,100,3394,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Electrical Power Engineering,,,98.3,3691,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Electronics & Data Engineering,,,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Mechanical Engineering,,,,,ric,mathematics,chemistry,physics,,"mathematics,physics",h2 mathematics and h2 physics
+SIT,Mechanical Design & Manufacturing Engineering,,,93.4,3787,ric,mathematics,chemistry,physics,,"mathematics,physics",h2 mathematics and h2 physics
+SIT,Naval Architecture & Marine Engineering,,,100,3592,r,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Computer Engineering,,,,,r,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SIT,Mechatronic Systems,,,89.3,3690,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,computing",h2 mathematics or h2 physics or h2 chemistry or h2 computing
+SIT,Robotics Systems,,,,,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,computing",h2 mathematics or h2 physics or h2 chemistry or h2 computing
+SIT,Digital Communications & Integrated Media,,,,,as,mathematics,computing,physics,,"mathematics,physics,chemistry,computing",h2 mathematics or h2 physics or h2 chemistry or h2 computing
+SIT,Digital Art & Animation,,,80,3125,as,art,computing,physics,,"mathematics,physics,chemistry,computing",h2 mathematics or h2 physics or h2 chemistry or h2 computing
+SIT,User Experience & Game Design,,,,,as,computing,art,economics,,"mathematics,physics,chemistry,computing",h2 mathematics or h2 physics or h2 chemistry or h2 computing
+SUSS,Accountancy,,,98.6,3231,c,mathematics,economics,accounting,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Business Analytics,,,93.5,4372,ec,mathematics,economics,computing,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Early Childhood Education,,,93,2963,ias,project work,general paper,literature,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Finance,,,84.4,3862,isec,economics,mathematics,computing,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Human Resource Management,,,95.6,3412,sec,economics,general paper,business,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Marketing,,,92.4,3411,isec,economics,mathematics,business,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Public Safety & Security,,,,,sec,general paper,project work,economics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Social Work,,,94.7,3461,se,general paper,project work,economics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUSS,Supply Chain Management,,,97.4,3381,r,economics,mathematics,general paper,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUTD,Architecture & Sustainable Design,,,96.6,3842,ra,mathematics,art,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUTD,Computer Science & Design,,,98.3,5030,ric,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUTD,Design & Artificial Intelligence,,,,,as,mathematics,computing,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUTD,Engineering Product Development,,,95.5,4778,ric,mathematics,art,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper
+SUTD,Engineering Systems & Design,,,95.5,4778,ric,mathematics,chemistry,physics,,"mathematics,physics,chemistry,biology,computing,general paper",h2 mathematics or h2 physics or h2 chemistry or h2 biology or h2 computing and h1 general paper

@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}{{degree}}{% endblock %} {% block content %}
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawCharts);
+
+  function drawCharts() {    
+    var data = google.visualization.arrayToDataTable({{graph|tojson}}); 
+    var options = {
+      title: 'gross monthly mean (SGD)',
+      curveType: 'none',
+      legend: 'none'
+    };
+    var chart = new google.visualization.LineChart(document.getElementById('chart'));
+    chart.draw(data, options);
+  }
+</script>
+
+
+<div class="course-bg">
+  <div class="course-wrapper">
+  <img src={{logo_file}} a class="logo">
+    <h1>{{degree}}</h1>
+    <table cellspacing="0" class="course-info">
+      <h3 class="section-title">COURSE INFORMATION</h3>
+      <tr>
+        <td class="c-info">Offered By</td>
+        <td class="c-data">{{school}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">A Level IGP (10th Percentile)</td>
+        <td class="c-data">{{Alevel_igp}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">Polytechnic GPA (10th Percentile)</td>
+        <td class="c-data">{{polytechnic_igp}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">RIASEC Code</td>
+        <td class="c-data" id="riasec">{{riasec_code}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">Relevant Subjects</td>
+        <td class="c-data" id="sub">{{related_subject1}}, {{related_subject2}}, {{related_subject3}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">A Level Prerequisites</td>
+        <td class="c-data">{{a_level_prerequisites}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">Additional Requirements</td>
+        <td class="c-data">{{additional_information}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">Course Employment Rate (%)</td>
+        <td class="c-data">{{employment_rate}}</td>
+      </tr>
+      <tr>
+        <td class="c-info">Graduate Mean Starting Income (SGD)</td>
+        <td class="c-data">{{sal}}</td>
+      </tr>
+      <tr>
+        <td class="c-info"> {{acronym}} graduate student's starting salary </td>
+        <td class="c-data" rowspan="2">
+          <div id="chart" style="width: 600px; height: 500px"></div>
+        </td>
+      </tr>
+      
+        
+      
+    </table> 
+    <form>
+      <input type="button" class="result-button" value="Go back" onclick="history.back()">
+    </form>
+    
+  </div>
+  
+</div>
+
+    <style>
+      body {
+      background-image: url("/static/{{background_file}}");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+      }
+  
+    </style>
+
+    {% endblock %}

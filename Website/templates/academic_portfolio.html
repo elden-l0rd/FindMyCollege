@@ -1,0 +1,99 @@
+{% extends "base.html" %} {% block title %}academic-portfolio{% endblock %} {% block content
+  %}
+  <body>
+    <script>
+      function showForm(){
+        var cat = document.getElementById("curriculum");
+        if(cat.value == "ALevel"){
+            document.getElementById("alevel_score_input").hidden = false;
+            document.getElementById("polytechnic_gpa_input").hidden = true;
+        }
+        else{
+            document.getElementById("alevel_score_input").hidden = true;
+            document.getElementById("polytechnic_gpa_input").hidden = false;
+        }
+      }
+    </script>
+
+    <div class="academic-portfolio-wrapper">
+      <form method="POST">
+        <h1>ACADEMIC PORTFOLIO</h1>
+        <div class="form-group">
+          <label for="curriculum">QUALIFICATIONS</label>
+          <select name="curriculum" id="curriculum" onchange="showForm()">
+            <option value="ALevel">A Levels</option>
+            <option value="Polytechnic">Polytechnic</options>
+          </select>
+          <div id="alevel_score_input">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <label for="alevel_score">'A' LEVEL SUBJECTS</label>
+              <p id="random">(Not inclusive of GP and PW grades)</p>
+              <div class="alevel_select-wrapper" style="display: flex; justify-content: space-evenly;">
+                <select name="1stH2" class="alevel_dropbox">
+                  <option value="" disabled selected>1st H2 Grade</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="S">S</option>
+                  <option value="U">Ungraded</option>
+                </select>
+                <select name="2ndH2" class="alevel_dropbox">
+                  <option value="" disabled selected>2nd H2 Grade</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="S">S</option>
+                  <option value="U">Ungraded</option>
+                </select>
+                <select name="3rdH2" class="alevel_dropbox">
+                  <option value="" disabled selected>3rd H2 Grade</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="S">S</option>
+                  <option value="U">Ungraded</option>
+                </select>
+                <select name="H1" class="alevel_dropbox">
+                  <option value="" disabled selected>H1 Grade</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="S">S</option>
+                  <option value="U">Ungraded</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div id="polytechnic_gpa_input" hidden>
+            <div id="gpa_wrapper">
+              <label>Polytechnic GPA</label>
+            <input type="Score" class="form-control" id="polytechnic_gpa" name="alevel_score" placeholder="Enter GPA"/>
+            </div>
+        </div>
+          </div>
+        <button type="submit" class="acad-submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  
+  
+
+  <style>
+    body {
+      background-image: url("static/university_background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+      color:white
+    }
+  </style>
+  
+  {% endblock %}

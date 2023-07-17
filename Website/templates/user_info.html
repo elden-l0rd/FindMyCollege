@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block title %}subject-interests{% endblock %} {%
+block content %}
+
+<body>
+  <div class="subject-interest">
+    <form class="subject-interest-form" method="POST">
+      <h1>SUBJECT INTERESTS</h1>
+      <h2>Rank your top 3 subject interests</h2>
+      <p>Don't pick the same subject more than once!</p>
+      <div class="subject-dropdown">
+        <div class="dropdown-box">
+          <label>Subject 1</label>
+          <select name="subject1">
+            <option value="" disabled selected>Pick a Subject</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="biology">Biology</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="computing">Computing</option>
+            <option value="project work">Project Work</option>
+            <option value="general paper">English</option>
+            <option value="economics">Economics</option>
+            <option value="physical education">Physical Education</option>
+            <option value="art">Art</option>
+            <option value="literature">Literature</option>
+            <option value="business">Business</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="accounting">Accounting</option>
+          </select>
+        </div>
+        <div class="dropdown-box">
+          <label>Subject 2</label>
+          <select name="subject2">
+            <option value="" disabled selected>Pick a Subject</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="biology">Biology</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="computing">Computing</option>
+            <option value="project work">Project Work</option>
+            <option value="general paper">English</option>
+            <option value="economics">Economics</option>
+            <option value="physical education">Physical Education</option>
+            <option value="art">Art</option>
+            <option value="literature">Literature</option>
+            <option value="business">Business</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="accounting">Accounting</option>
+          </select>
+        </div>
+        <div class="dropdown-box">
+          <label>Subject 3</label>
+          <select name="subject3">
+            <option value="" disabled selected>Pick a Subject</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="biology">Biology</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="computing">Computing</option>
+            <option value="project work">Project Work</option>
+            <option value="general paper">English</option>
+            <option value="economics">Economics</option>
+            <option value="physical education">Physical Education</option>
+            <option value="art">Art</option>
+            <option value="literature">Literature</option>
+            <option value="business">Business</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="accounting">Accounting</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</body>
+
+<style>
+  body{
+    background-image: url("static/university_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    color:black;
+  }
+</style>
+
+<script>
+ const optionMenus = document.querySelectorAll(".select-menu");
+optionMenus.forEach((optionMenu) => {
+  const selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+  selectBtn.addEventListener("click", () =>
+    optionMenu.classList.toggle("active")
+  );
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      let selectedOption = option.querySelector(".option-text").innerText;
+      sBtn_text.innerText = selectedOption;
+
+      optionMenu.classList.remove("active");
+    });
+  });
+});
+
+</script>
+
+
+
+{% endblock %}

@@ -1,0 +1,345 @@
+{% extends "base.html" %} {% block title %}Prospects{% endblock %} 
+
+{% block content %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Multiple Options Select Menu </title>-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+                                
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+    </head>
+    <body>
+        <div class="prospects-container">
+            <h3 style="text-align: center;  color: #daac62; font-size: 50px;">Compare Courses</h3>
+            <h4 style="text-align: center; margin-top: 10px; margin-bottom: 20px;color: #daac62;font-size: 22px;">Compare trends and cutoff scores between courses</h4>
+            
+                <div class="select-btn">
+                <span class="btn-text">Select Courses to Compare</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+
+            <ul class="list-items"></ul>
+
+            <button type="submit" class="prospectssubmitbutton">Submit</button>
+            
+        </div>
+        <div class="graph-container">
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+        
+        <script>
+
+          const course_list = JSON.parse('{{ all_degrees_search | tojson | safe }}');
+          const options = course_list;
+
+
+
+          const listItems = document.querySelector('.list-items');
+
+          options.forEach(option => {
+            const listItem = document.createElement('li');
+            listItem.classList.add('item');
+
+            const checkbox = document.createElement('span');
+            checkbox.classList.add('checkbox');
+
+            const checkIcon = document.createElement('i');
+            checkIcon.classList.add('fa-solid', 'fa-check', 'check-icon');
+            checkbox.appendChild(checkIcon);
+
+            const itemText = document.createElement('span');
+            itemText.classList.add('item-text');
+            itemText.textContent = option;
+
+            listItem.appendChild(checkbox);
+            listItem.appendChild(itemText);
+            listItems.appendChild(listItem);
+          });
+          const selectBtn = document.querySelector(".select-btn"),
+          items = document.querySelectorAll(".item");
+
+          selectBtn.addEventListener("click", () => {
+              selectBtn.classList.toggle("open");
+          });
+
+          const maxSelections = 5;
+        let numSelections = 0;
+        let selectedIndexes=[];
+        items.forEach((item,index) => {
+        item.addEventListener("click", function() {
+            if (item.classList.contains("checked")) {
+            // Remove the "checked" class and decrease the counter
+            item.classList.remove("checked");
+            numSelections--;
+            selectedIndexes=selectedIndexes.filter(i=>i!==index);
+            } else {
+            // Add the "checked" class and increase the counter
+            if (numSelections < maxSelections) {
+                item.classList.add("checked");
+                numSelections++;
+                selectedIndexes.push(index);
+
+            }
+            }
+
+            // Update the button text based on the number of selections
+            let btnText = document.querySelector(".btn-text");
+            if (numSelections > 0) {
+            btnText.innerText = `${numSelections} Selected`;
+            } else {
+            btnText.innerText = "Select Courses to Compare";
+            }      
+
+        });
+        });
+
+
+
+    
+
+    
+    
+        </script>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+                // initialize chart
+                let myChart = new Chart(
+        document.getElementById('myChart'),
+        {
+            type: 'bar',
+            data: {
+                labels: ['Course 1', 'Course 2', 'Course 3', 'Course 4', 'Course 5'],
+                datasets: [
+                    {
+                        label: 'Select at least one course',
+                        data: [75, 80, 90, 70, 85],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.9)',
+                            'rgba(54, 162, 235, 0.9)',
+                            'rgba(255, 206, 86, 0.9)',
+                            'rgba(75, 192, 192, 0.9)',
+                            'rgba(153, 102, 255, 0.9)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        }
+    );
+
+
+
+    const submitButton = document.querySelector('.prospectssubmitbutton');
+
+
+    
+
+    submitButton.addEventListener('click', function() {
+        var course_info = {{ course_info | tojson }};
+        var all_degrees_search = {{ all_degrees_search | tojson }};
+        var cut_offs = {{ cut_offs | tojson }};
+
+        if (selectedIndexes.length === 0) {
+            alert("Please select at least one course to compare.");
+            return;
+        }
+
+        // destroy existing chart
+        myChart.destroy();
+
+
+        selectedRates = [];
+        selectedSalary = [];
+        selectedCourses = [];
+        Alevel=[]
+        poly=[]
+        backgroundColor1 =[];
+        backgroundColor2 =[];
+        backgroundColor3 =[];
+        backgroundColor4 =[];
+        borderColor1=[];
+        borderColor2=[];
+        borderColor3=[];
+        borderColor4=[];
+
+        for (let i = 0; i < selectedIndexes.length; i++) {
+            const index = selectedIndexes[i];
+    
+            selectedRates.push(course_info[index][0]);
+            selectedSalary.push(course_info[index][1]);
+            selectedCourses.push(all_degrees_search[index]);
+            backgroundColor1.push('rgba(255, 99, 132, 0.8)');
+            backgroundColor2.push('rgba(255, 159, 64, 0.8)');
+            backgroundColor3.push('rgba(54, 162, 235, 0.9)');
+            backgroundColor4.push('rgba(75, 192, 192, 0.9)');
+            borderColor1.push('rgba(255, 99, 132, 1)');
+            borderColor2.push('rgba(255, 159, 64, 1)');
+            borderColor3.push('rgba(54, 162, 235, 1)');
+            borderColor4.push('rgba(75, 192, 192, 1)');
+            Alevel.push(cut_offs[index][0]);
+            poly.push(cut_offs[index][1]);
+        }
+        
+        
+            
+        // create new chart
+        myChart = new Chart(
+            document.getElementById('myChart'),
+            {
+                type: 'bar',
+                data: {
+                    labels: selectedCourses,
+                    datasets: [
+                        {
+                            label: "Graduate Employment Rate",
+                            data: selectedRates,
+                            backgroundColor: backgroundColor1,
+                            borderColor: borderColor1,
+                            borderWidth: 1,
+                            yAxisID:'y-axis-1'
+                        },
+                        {
+                            label: "Starting Salary",
+                            data: selectedSalary,
+                            backgroundColor: backgroundColor2,
+                            borderColor: borderColor2,
+                            borderWidth: 1,
+                            yAxisID: 'y-axis-2'
+                        },
+                        {
+                            label: "Alevel Cutoff Grades",
+                            data: Alevel,
+                            backgroundColor: backgroundColor3,
+                            borderColor: borderColor3,
+                            borderWidth: 1,
+                            yAxisID: 'y-axis-3'
+                        },
+                        {
+                            label: "Polytechnic Cutoff Grades",
+                            data: poly,
+                            backgroundColor: backgroundColor4,
+                            borderColor: borderColor4,
+                            borderWidth: 1,
+                            yAxisID: 'y-axis-4'
+                        },
+                    ]
+                },
+                options: {
+                    scales: {
+                        yAxes: [
+                    {
+                        id: 'y-axis-1', // assign an ID to the first y-axis
+                        type: 'linear',
+                        position: 'left',
+                        ticks: {
+                            suggestedMin: 50
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Graduate Employment Rate'
+                          }
+                          
+                        
+                    },
+                    {
+                        id: 'y-axis-2', // assign an ID to the second y-axis
+                        type: 'linear',
+                        position: 'right',
+                        ticks: {
+                            suggestedMin: 1000
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Graduate Starting Salary'
+                          },
+                          
+                    },
+                    {
+                        id: 'y-axis-3', // assign an ID to the second y-axis
+                        type: 'linear',
+                        position: 'right',
+                        ticks: {
+                            suggestedMin: 1000
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'A Level Cut Off'
+                          },
+                          
+                    },
+                    {
+                        id: 'y-axis-4', // assign an ID to the second y-axis
+                        type: 'linear',
+                        position: 'right',
+                        ticks: {
+                            suggestedMin: 1000
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Polytechnic Cut Offs'
+                          },
+                          
+                    }
+                ]
+                    }
+                }
+            }
+        );
+    });
+        
+
+
+
+
+    
+           
+              
+              
+
+        </script>
+        
+    </body>
+</html>
+
+  <style>
+    body {
+      background-image: url("static/SG_background.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+      color:black;
+    }
+  </style>
+  {% endblock %}
+
+

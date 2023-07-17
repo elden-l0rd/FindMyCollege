@@ -1,0 +1,97 @@
+{% extends "base.html" %} {% block title %}FindMyCollege{% endblock %} {% block content %}
+
+<body>
+  <div class="test-back">
+    <div class="test-wrapper">
+      <div class="test-header">
+        <img src="{{url_for("static",filename="riasec_bg.jpg")}}">
+        <p>Check the statement if you relate to it.</br> There are no wrong answers!</p>
+      </div>
+      <form action="" method="post" id="form1">
+        <div class="tsanswers"><p>1) I like to work on cars</p><div class="radio"><input name="q0" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>2) I like to do puzzles</p><div class="radio"><input name="q1" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>3) I am good at working independently</p><div class="radio"><input name="q2" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>4) I like to work in teams</p><div class="radio"><input name="q3" class="test-checkbox" type="checkbox" value=""></div></div>
+        <div class="tsanswers"><p>5) I am an ambitious person, I set goals for myself</p><div class="radio"><input name="q4" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>6) I like to organise things (files/offices/desks)</p><div class="radio"><input name="q5" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>7) I like to build things</p><div class="radio"><input name="q6" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>8) I like to have clear instructions to follow</p><div class="radio"><input name="q7" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>9) I like to read about art and music</p><div class="radio"><input name="q8" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>10) I like to try to influence or persuade people</p><div class="radio"><input name="q9" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>11) I like to do experiments</p><div class="radio"><input name="q10" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>12) I like to teach or train people</p><div class="radio"><input name="q11" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>13) I like trying to help people solve their problems</p><div class="radio"><input name="q12" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>14) I like to take care of animals</p><div class="radio"><input name="q13" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>15) I wouldn't mind working 8 hours a day in the office</p><div class="radio"><input name="q14" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>16) I like selling things</p><div class="radio"><input name="q15" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>17) I enjoy creative writing</p><div class="radio"><input name="q16" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>18) I enjoy science</p><div class="radio"><input name="q17" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>19) I am quick to take on new responsibilities</p><div class="radio"><input name="q18" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>20) I am interested in healing people</p><div class="radio"><input name="q19" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>21) I enjoy trying to figure out how things work</p><div class="radio"><input name="q20" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>22) I like puttings things together or assembling things</p><div class="radio"><input name="q21" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>23) I am a creative person</p><div class="radio"><input name="q22" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>24) I pay attention to detail</p><div class="radio"><input name="q23" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>25) I like to do filing or typing</p><div class="radio"><input name="q24" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>26) I like to analyse things (problems/situations)</p><div class="radio"><input name="q25" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>27) I like to play instruments or sing</p><div class="radio"><input name="q26" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>28) I enjoy learning about other cultures</p><div class="radio"><input name="q27" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>29) I would like to start my own business</p><div class="radio"><input name="q28" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>30) I like to cook</p><div class="radio"><input name="q29" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>31) I like acting in plays</p><div class="radio"><input name="q30" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>32) I am a practical person</p><div class="radio"><input name="q31" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>33) I like working with numbers or charts</p><div class="radio"><input name="q32" class="test-checkbox" type="checkbox" value="i"></div></div>
+        <div class="tsanswers"><p>34) I like to get into discussions about issues</p><div class="radio"><input name="q33" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>35) I am good at keeping records of my work</p><div class="radio"><input name="q34" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>36) I like working outdoors</p><div class="radio"><input name="q35" class="test-checkbox" type="checkbox" value="r"></div></div>
+        <div class="tsanswers"><p>37) I like to lead</p><div class="radio"><input name="q36" class="test-checkbox" type="checkbox" value="e"></div></div>
+        <div class="tsanswers"><p>38) I would like to work in an office</p><div class="radio"><input name="q37" class="test-checkbox" type="checkbox" value="c"></div></div>
+        <div class="tsanswers"><p>39) I am good at math</p><div class="radio"><input name="q38" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>40) I like helping people</p><div class="radio"><input name="q39" class="test-checkbox" type="checkbox" value="s"></div></div>
+        <div class="tsanswers"><p>41) I like to draw</p><div class="radio"><input name="q40" class="test-checkbox" type="checkbox" value="a"></div></div>
+        <div class="tsanswers"><p>42) I like to give speeches</p><div class="radio"><input name="q41" class="test-checkbox" type="checkbox" value="e"></div></div>
+
+        <div class="buttonspace">
+          <button class="submitbutton" type="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+<style>
+  body {
+    background-image: url("static/university_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    }
+  </style>  
+  <script ez-screx="true">
+    function valans(e) {
+
+    if (jQuery("#" + e).is(":checked")) {
+        jQuery("#" + e).attr("checked", false)
+    }
+    }
+    function validateTSForm() {
+      if (jQuery(".tscont :checkbox:checked").length < 1) {
+        alert("You need to check at least one option");
+        return false;
+      } 
+      else {
+        jQuery("#tsform").submit();
+        return true
+      }
+    }
+</script>
+<script ez-screx="true">
+  if (typeof jQuery == 'undefined'){
+    __ez.scxr.getDW(document).write(unescape("%3Cscript src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'%3E%3C/script%3E"));    
+    }
+</script>
+
+
+
+{% endblock %}

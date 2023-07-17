@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block title %}All Courses{% endblock %} 
+
+{% block search %}
+<h3 style="text-align: center; margin-top: 50px; color: #daac62;font-size: 32px;">Course Search</h3>
+<h4 style="text-align: center; margin-top: 10px; color: #daac62;">Search for a course from any local university for more info (e.g. Computer Science)</h4>
+
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <form method="POST" class="search-bar" >
+        <input type="text" placeholder="search any course" name="q">
+        <button type="submit"><img src="/static/searchIcon.png"></button>
+        <div class="resultBox">
+          <!-- here list are inserted from javascript -->
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  <script>
+    const course_list = JSON.parse('{{ all_degrees_search | tojson | safe }}');
+    const suggestions = course_list;
+
+const searchInput = document.querySelector(".search-bar input");
+const resultBox = document.querySelector(".resultBox");
+
+// if user types something in the input box
+searchInput.addEventListener("input", function () {
+  const inputValue = this.value.toLowerCase().trim(); // get input value and remove extra whitespace
+  resultBox.innerHTML = ""; // clear the suggestions box
+
+  // if the input is not empty
+  if (inputValue) {
+    // filter the suggestions array based on the input value
+    const filteredSuggestions = suggestions.filter(function (suggestion) {
+      return suggestion.toLowerCase().includes(inputValue);
+    }).slice(0, 5);
+
+    // create a list of suggestions and add them to the suggestions box
+    filteredSuggestions.forEach(function (suggestion) {
+      const suggestionElement = document.createElement("div");
+      suggestionElement.innerHTML = suggestion.replace(
+        inputValue,
+        `<strong>${inputValue}</strong>`
+      );
+      suggestionElement.classList.add("suggestion");
+      resultBox.appendChild(suggestionElement);
+    });
+    resultBox.style.maxHeight = "300px"; // show the suggestions box
+  } else {
+    resultBox.style.maxHeight = "0"; // hide the suggestions box
+  }
+});
+
+// if user clicks on a suggestion
+resultBox.addEventListener("click", function (event) {
+  if (event.target.classList.contains("suggestion")) {
+    searchInput.value = event.target.innerText;
+    resultBox.style.maxHeight = "0"; // hide the suggestions box
+    resultBox.innerHTML = ""; // remove the suggestions
+  }
+});
+
+// if user clicks outside the search bar
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".search-bar")) {
+    resultBox.style.maxHeight = "0"; // hide the suggestions box
+  }
+});
+
+  </script>
+
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+  
+<body>
+    
+    <div class="allcourses-wrapper">
+      <div class="allCourses-wrapper">
+
+        <h1>All Courses</h1>
+        <div id="course-space">
+          {% for school, degrees in all_courses.items() %}  
+          <div class="by-school">
+            <h2>{{ school }}</h2>
+            <div class="course-byschool">
+            {% for degree in degrees %}
+              <a href="course_specifics/{{degree[2]}}">{{degree[1]}}</a>
+            {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>  
+    </div>
+  </body>
+  
+  <style>
+    body {
+      background-image: url("static/university_background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+      color:black;
+    }
+  </style>
+  {% endblock %}
+
+

@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+    {% block content%}
+        {% if user.is_authenticated %}
+        <img class="home-background-l" src="{{url_for("static",filename="login_background.jpg")}}">
+        <div class="home-div-l">
+            <h1>University Course Recommendations</h1>
+            <h2>A journey of a thousand miles begins with a single step</h2>
+            <div class="home-boxes">
+                <div class="home-box">
+                    <div class="icon-space">
+                        <img class="home-icon" src="{{url_for("static",filename="riasec_icon.png")}}">
+                    </div>
+                    <div class="info-space">
+                        <h3>RIASEC PROFILE</h3>
+                    </div>
+                </div>
+                <div class="home-box">
+                    <div class="icon-space">
+                        <img class="home-icon" id="book-icon" src="{{url_for("static",filename="book_icon.png")}}">
+                    </div>
+                    <div class="info-space">
+                        <h3>ACADEMIC PORTFOLIO</h3>
+                    </div>
+                </div>
+                <div class="home-box">
+                    <div class="icon-space">
+                        <img class="home-icon" id="subject-icon" src="{{url_for("static",filename="subject_icon.png")}}">
+                    </div>
+                    <div class="info-space">
+                        <h3>SUBJECT INTEREST</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div>
+            <img class="home-background" src="{{url_for("static",filename="university_background.jpg")}}">
+            <div class="home-wrapper"></div>
+            <img class="uni-student" src="{{url_for("static",filename="university_student.jpg")}}">
+            <h1 class="title">UNSURE WHERE TO GO NEXT</br>IN YOUR ACADEMIC JOURNEY?</h1>
+            <div class="home-info"}>
+                <h3>
+                  LET US FIND YOU THE UNIVERSITY OF YOUR <span>DREAMS</span>
+                </h3>
+                <p>
+                  FindMyCollege takes into account your academic portfolio,<br></br>
+                  subject interests and RIASEC personality type<br></br>
+                  to determine the best university course for you!
+                </p>
+              </div>
+        </div>
+        {% endif%}
+
+    {% endblock %}
